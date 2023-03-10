@@ -46,9 +46,9 @@ public class Main {
         int mortality = 8;//смертность
         int total = 0;
         for (int i = 1; i <= 10; i++) {
-            total = total + (berteRate + mortality) * 12000;
-            int total2 = total + country;
-            System.out.println("Год " + i + " численость населения равна " + total2);
+            total = (berteRate - mortality) * country / 1000;
+            country += total;
+            System.out.println("Год " + i + " численость населения равна " + country);
         }
     }
 
@@ -86,17 +86,23 @@ public class Main {
 
     public static void task7() {
         System.out.println("Задача 7");
-        int data = 5;
-        for (data = 5;data <=31;data = data + 7)
+        for (int data = 5; data <= 31; data = data + 7)
             System.out.println("Сегодня пятница, " + data + "-е число. Необходимо подготовить отчет");
     }
+
     public static void task8() {
         System.out.println("Задача 8");
-        int comet = 1896;
-        for (;comet <=2096;comet = comet +79)
-            System.out.println(comet);
+        int comet = 0;
+        for (; comet <= 2100; comet = comet + 79) {
+            if (comet >= 1823) {
+                System.out.println(comet);
+            }
+        }
     }
 }
+
+
+
 
 
 
