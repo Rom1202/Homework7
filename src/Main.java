@@ -40,7 +40,7 @@ public class Main {
     }
 
     public static void task3() {
-        System.out.println("Задача 3");
+        System.out.println("Задача 3");//переделал
         int country = 12_000_000;
         int berteRate = 17;//рождаемость
         int mortality = 8;//смертность
@@ -86,12 +86,12 @@ public class Main {
 
     public static void task7() {
         System.out.println("Задача 7");
-        for (int data = 5; data <= 31; data = data + 7)
+        for (int data = 5; data <= 31; data = data + 7)//исправил
             System.out.println("Сегодня пятница, " + data + "-е число. Необходимо подготовить отчет");
     }
 
     public static void task8() {
-        System.out.println("Задача 8");
+        System.out.println("Задача 8");//переделал
         int comet = 0;
         for (; comet <= 2100; comet = comet + 79) {
             if (comet >= 1823) {
